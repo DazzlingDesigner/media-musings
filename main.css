@@ -7,15 +7,19 @@
 ---------------------------------------*/
 
 body {
-  
+  height: 100vh;
+  padding: 2rem;
 }
 	
 div.wrapper {
-  
+  display: grid;
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 img {
-  
+  max-width: 100%;
 }
 
 
@@ -23,7 +27,10 @@ img {
 ---------------------------------------*/
 /* ⬇ Entire header area */
 header {
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem 3rem 1rem
 }
 
 /* ⬇ Contains both the h1 and h2 */
@@ -85,11 +92,15 @@ nav.topnav a:hover {
 ---------------------------------------*/	
 /* ⬇ Make this a grid container */
 main.homepage {
-  
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 article.blog {
-  
+  grid-column: 1/4;
+  grid-row: 1/3;
+  padding: 1.5rem;
 }
 /* ⬇ Headline for the blog */
 article.blog h2 { 
@@ -107,12 +118,14 @@ main.homepage aside {
 
 /* ⬇ Recent aside */
 main.homepage aside.recent {
-  
+  grid-column: 4/5;
+  grid-row: 1/2;
 }
 
 /* ⬇ Links aside*/
 main.homepage aside.links {
-  
+  grid-column: 4/5;
+  grid-row: 2/3;
 }
 
 /* ⬇ Headlines at the top of the asides*/
@@ -122,12 +135,12 @@ main.homepage aside h3 {
 
 /* ⬇ Unordered list in asides */
 main.homepage aside ul { 
-  
+  margin-left: 1rem;
 }
 
 /* ⬇ List items in the unordered list */
 main.homepage aside li { 
-  
+  margin-bottom: 0.5rem;
 }
 
 /* ⬇ Link text in the asides */
@@ -146,7 +159,11 @@ main.homepage aside li a:hover {
 ---------------------------------------*/
 /* ⬇ Section that contains entire building area */
 section.campus	{
-  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-column: 1/5;
+  grid-row: 3/4;
+  gap: 1.5rem
 }	
 
 /* ⬇ This applies to each building section */
@@ -161,7 +178,6 @@ section.campus h3 {
 
 /* ⬇ Contains each building's image and caption */
 section.campus figure {
-  
 }
 
 /* ⬇ Picture of each building */
@@ -181,7 +197,7 @@ section.campus figcaption {
 ---------------------------------------*/
 
 footer {
-  
+  padding-top: 4rem 
 }
 
 footer small { 
