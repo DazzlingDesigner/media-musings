@@ -9,13 +9,17 @@
 body {
   height: 100vh;
   padding: 2rem;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: rgb(126, 238, 126);
 }
-	
+
 div.wrapper {
   display: grid;
   max-width: 64rem;
   margin-left: auto;
   margin-right: auto;
+  border: .5rem solid black;
+  padding: 2rem;
 }
 
 img {
@@ -30,25 +34,31 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 1rem 3rem 1rem
+  background-color: rgba(0, 80, 0, 0.562);
+  padding: 2rem 1rem 3rem 1rem;
 }
 
 /* ⬇ Contains both the h1 and h2 */
 header div.site-name { 
-  
+  font-size: larger;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header h1 {
-  
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: xx-large;
 }
 
 /* ⬇ The h1's link */
 header h1 a {
+  text-decoration: none;
+  color: rgb(255, 255, 0);
   
 }
 
 header h2 {
-  
+  padding: 1em 0 0 0;
+  color: white;
 }
 
 
@@ -57,7 +67,8 @@ header h2 {
 ---------------------------------------*/	
 /* ⬇ Entire navigation area */
 nav.topnav { 
-  
+  background-color: hsl(60, 98%, 67%);
+  padding: .5rem;
 }
 
 nav.topnav ul {
@@ -67,7 +78,6 @@ nav.topnav ul {
 }
 
 nav.topnav li {
-  
 }
 
 /* ⬇ Links in the navigation bar */
@@ -78,12 +88,13 @@ nav.topnav a {
 	text-decoration: none;
 	color: black; /* ← you can change this */
   transition: all 0.75s ease-in-out;
+  font-weight: bold;
 }
 
 /* ⬇ Nav link hover effect */
 nav.topnav a:hover {
-	background-color: ghostwhite; /* ← you can change this */
-	border-radius: 2rem;
+	background-color: white; /* ← you can change this */
+	border-radius: 9rem;
 }
 
 
@@ -100,42 +111,53 @@ main.homepage {
 article.blog {
   grid-column: 1/4;
   grid-row: 1/3;
-  padding: 1.5rem;
+  padding: 4rem 1.5rem 2rem;
 }
 /* ⬇ Headline for the blog */
 article.blog h2 { 
-  
+  font-size: larger;
+  border-bottom: 1px solid black;
 }
 /* ⬇ Text in the blog */
 article.blog p { /* ← blog text */
-  
+  font-size: large;
+  line-height: 1.2em;
+  padding-top: 1em;
 }
 
 /* ⬇ This controls both asides */
 main.homepage aside { 
-  
+  background-color: white;
+  border: px solid black;
+  padding: .5rem;
+  box-shadow: 5px 5px 5px 5px;
 }
 
 /* ⬇ Recent aside */
 main.homepage aside.recent {
   grid-column: 4/5;
   grid-row: 1/2;
+  margin: 1rem 1rem;
 }
 
 /* ⬇ Links aside*/
 main.homepage aside.links {
   grid-column: 4/5;
   grid-row: 2/3;
+  margin: 1rem 1rem;
 }
 
 /* ⬇ Headlines at the top of the asides*/
 main.homepage aside h3 { 
-  
+  line-height: 1.2;
+  display: flex;
+  justify-content: center;
 }
 
 /* ⬇ Unordered list in asides */
 main.homepage aside ul { 
-  margin-left: 1rem;
+  margin: .5rem .1rem .5rem 1rem;
+  line-height: 1.4;
 }
 
 /* ⬇ List items in the unordered list */
@@ -150,7 +172,7 @@ main.homepage aside li a {
 
 /* ⬇ Aside hover effect */
 main.homepage aside li a:hover { 
-  
+  color: goldenrod;
 }
 
 
@@ -178,6 +200,7 @@ section.campus h3 {
 
 /* ⬇ Contains each building's image and caption */
 section.campus figure {
+
 }
 
 /* ⬇ Picture of each building */
@@ -188,7 +211,8 @@ section.campus img {
 
 /* ⬇ Caption text under each building */
 section.campus figcaption {
-  
+  font-size: medium;
+  padding: 1rem;
 }
 
 
@@ -197,11 +221,13 @@ section.campus figcaption {
 ---------------------------------------*/
 
 footer {
-  padding-top: 4rem 
+  padding: 1rem;
+  background-color: rgba(0, 80, 0, 0.562);
+  color: white;
 }
 
 footer small { 
-  
+  line-height: 1.2;
 }
 
 /* ⬇ The link in the footer */
