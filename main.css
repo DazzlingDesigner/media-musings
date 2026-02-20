@@ -67,7 +67,7 @@ header h2 {
 ---------------------------------------*/	
 /* ⬇ Entire navigation area */
 nav.topnav { 
-  background-color: hsl(60, 98%, 67%);
+  background-color: rgb(255, 255, 0);
   padding: .5rem;
 }
 
@@ -172,7 +172,7 @@ main.homepage aside li a {
 
 /* ⬇ Aside hover effect */
 main.homepage aside li a:hover { 
-  color: goldenrod;
+  color: rgba(0, 80, 0, 0.562);
 }
 
 
@@ -195,7 +195,7 @@ section.campus section { /* ← all 6 of the building sections */
 
 /* ⬇ Name of each building */
 section.campus h3 {
-  
+  padding-bottom: .5rem;
 }
 
 /* ⬇ Contains each building's image and caption */
@@ -222,8 +222,7 @@ section.campus figcaption {
 
 footer {
   padding: 1rem;
-  background-color: rgba(0, 80, 0, 0.562);
-  color: white;
+  background-color: rgb(255, 255, 0);
 }
 
 footer small { 
@@ -232,9 +231,12 @@ footer small {
 
 /* ⬇ The link in the footer */
 footer a {
-  
+
 }
 
+footer a:hover {
+  color: rgba(0, 80, 0, 0.562);
+}
 
 /* In a future assignment you'll create media queries below. */
 
