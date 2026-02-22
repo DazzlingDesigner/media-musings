@@ -19,7 +19,6 @@ div.wrapper {
   margin-left: auto;
   margin-right: auto;
   border: .5rem solid black;
-  padding: 2rem;
 }
 
 img {
@@ -35,18 +34,16 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: rgba(0, 80, 0, 0.562);
-  padding: 2rem 1rem 3rem 1rem;
+  padding: 2rem 2rem 2rem 2rem;
 }
 
 /* ⬇ Contains both the h1 and h2 */
 header div.site-name { 
-  font-size: larger;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header h1 {
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: xx-large;
+  font-size: 3.4rem;
 }
 
 /* ⬇ The h1's link */
@@ -57,8 +54,10 @@ header h1 a {
 }
 
 header h2 {
-  padding: 1em 0 0 0;
+  padding-top: 1.1rem;
   color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.3rem;
 }
 
 
@@ -68,7 +67,7 @@ header h2 {
 /* ⬇ Entire navigation area */
 nav.topnav { 
   background-color: rgb(255, 255, 0);
-  padding: .5rem;
+  padding: .4rem 1rem;
 }
 
 nav.topnav ul {
@@ -78,16 +77,17 @@ nav.topnav ul {
 }
 
 nav.topnav li {
+
 }
 
 /* ⬇ Links in the navigation bar */
 nav.topnav a {
-	padding: 1rem 2rem;
+	padding: 1rem 1.3rem;
 	text-transform: uppercase;
 	display: block;
 	text-decoration: none;
 	color: black; /* ← you can change this */
-  transition: all 0.75s ease-in-out;
+  transition: all 0.5s ease-in-out;
   font-weight: bold;
 }
 
@@ -111,47 +111,47 @@ main.homepage {
 article.blog {
   grid-column: 1/4;
   grid-row: 1/3;
-  padding: 4rem 1.5rem 2rem;
+  padding: 2rem 1.5rem 2rem;
 }
 /* ⬇ Headline for the blog */
 article.blog h2 { 
-  font-size: larger;
+  font-size: 1.2rem;
   border-bottom: 1px solid black;
 }
 /* ⬇ Text in the blog */
 article.blog p { /* ← blog text */
-  font-size: large;
-  line-height: 1.2em;
-  padding-top: 1em;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  padding-top: .4rem;
 }
 
 /* ⬇ This controls both asides */
 main.homepage aside { 
   background-color: white;
-  border: px solid black;
+  border: 1px solid black;
   padding: .5rem;
-  box-shadow: 5px 5px 5px 5px;
+  box-shadow: 5px 5px;
 }
 
 /* ⬇ Recent aside */
 main.homepage aside.recent {
   grid-column: 4/5;
   grid-row: 1/2;
-  margin: 1rem 1rem;
+  margin: 2rem 2rem 0rem 0rem;
 }
 
 /* ⬇ Links aside*/
 main.homepage aside.links {
   grid-column: 4/5;
   grid-row: 2/3;
-  margin: 1rem 1rem;
+  margin-right: 2rem;
 }
 
 /* ⬇ Headlines at the top of the asides*/
 main.homepage aside h3 { 
-  line-height: 1.2;
   display: flex;
   justify-content: center;
+  margin: .5rem 0rem .7rem 0rem;
 }
 
 /* ⬇ Unordered list in asides */
@@ -185,7 +185,7 @@ section.campus	{
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-column: 1/5;
   grid-row: 3/4;
-  gap: 1.5rem
+  margin: 0rem 1.5rem;
 }	
 
 /* ⬇ This applies to each building section */
@@ -206,7 +206,9 @@ section.campus figure {
 /* ⬇ Picture of each building */
 section.campus img {
 	border: 5px solid ghostwhite; /* ← you can change this */
-	box-shadow: 0px 10px 13px -5px #626262; /* ← you can change this */
+  margin-right: 80px;
+  margin-left: 10px;
+
 }
 
 /* ⬇ Caption text under each building */
