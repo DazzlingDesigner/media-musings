@@ -220,7 +220,7 @@ section.campus img {
 /* ⬇ Caption text under each building */
 section.campus figcaption {
   font-size: .9em;
-  /* padding: .5rem .5rem 0rem .5rem; */
+  padding: .5rem .5rem 0rem .5rem;
 }
 
 
